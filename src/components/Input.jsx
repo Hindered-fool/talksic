@@ -3,6 +3,7 @@ import Img from '../img/add-image.png'
 import Attach from '../img/link-file.png'
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
+
 import {
   arrayUnion,
   doc,
@@ -17,6 +18,9 @@ import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
 const Input = () => {
   const [text, setText] = useState("");
   const [img, setImg] = useState(null);
+  
+
+  
 
   const { currentUser } = useContext(AuthContext);
   const { data } = useContext(ChatContext);
@@ -29,7 +33,7 @@ const Input = () => {
 
       uploadTask.on(
         (error) => {
-          //TODO:Handle Error
+          
         },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
@@ -89,6 +93,7 @@ const Input = () => {
           id="file"
           onChange={(e) => setImg(e.target.files[0])}
         />
+        
         <label htmlFor="file">
           <img src={Img} alt="" />
         </label>

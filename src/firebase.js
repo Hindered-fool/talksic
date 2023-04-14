@@ -1,15 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth"
-import { getStorage, ref } from "firebase/storage";
+import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAwEi6PysSQiWGbu4BIh-K0YPrfHHZRY9c",
-  authDomain: "fir-9c156.firebaseapp.com",
-  projectId: "fir-9c156",
-  storageBucket: "fir-9c156.appspot.com",
-  messagingSenderId: "260565933935",
-  appId: "1:260565933935:web:71f1a87284cc605c69929a"
+  apiKey: "AIzaSyAjWmKpINTt8IrVKZQjHzb9KR692Xqho0A",
+  authDomain: "talksicv2.firebaseapp.com",
+  projectId: "talksicv2",
+  storageBucket: "talksicv2.appspot.com",
+  messagingSenderId: "1038259100615",
+  appId: "1:1038259100615:web:b87737b69c696eec8697e2"
 };
 
 
