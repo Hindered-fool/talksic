@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase";
-
+import logo from '../img/logo.jpg'
 const Login = () => {
   const [err, setErr] = useState(false);
   const navigate = useNavigate();
@@ -23,6 +23,7 @@ const Login = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">Talksic</span>
+        <img src={logo} alt='avatar' />
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />

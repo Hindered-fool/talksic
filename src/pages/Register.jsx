@@ -65,6 +65,7 @@ const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">Talksic</span>
+        <img src={logo} alt='avatar' />
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input required type="text" placeholder="display name" />
@@ -76,7 +77,7 @@ const Register = () => {
             <span>Add an avatar</span>
           </label>
           <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
+          {loading && "loading you in our sick world please wait..."}
           {err && <span>Something went wrong</span>}
         </form>
         <p>
