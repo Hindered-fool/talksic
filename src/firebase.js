@@ -4,12 +4,12 @@ import { getStorage } from "firebase/storage";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAjWmKpINTt8IrVKZQjHzb9KR692Xqho0A",
-  authDomain: "talksicv2.firebaseapp.com",
-  projectId: "talksicv2",
-  storageBucket: "talksicv2.appspot.com",
-  messagingSenderId: "1038259100615",
-  appId: "1:1038259100615:web:b87737b69c696eec8697e2"
+  apiKey: "AIzaSyDKeXKf3qypUB2kF52EigrNYjEz3JV_Lh4",
+  authDomain: "talksicmain.firebaseapp.com",
+  projectId: "talksicmain",
+  storageBucket: "talksicmain.appspot.com",
+  messagingSenderId: "1012077248554",
+  appId: "1:1012077248554:web:3eb0def22230482eb88353"
 };
 
 
